@@ -6,7 +6,40 @@ body {
 }
 
 #calculator {
-    width: 400px;
+    width: 450px;
     height: 600px;
-    border: solid 3px rgb(23, 57, 228);
+    border: solid 3px rgb(255, 255, 255);
+}
+
+.display {
+    height: 20%;
+    border-bottom: solid 3px rgb(255, 255, 255);
+}
+
+.calculatorMain {
+    display: flex;
+    height: calc(100% - 20% - 3px);
+}
+
+.numbersContainer {
+    width: 338px;
+    border-right: solid 3px white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+/*
+.calculatorMain {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}*/
+
+.operatorsContainer {
+    width: calc(100% - 338px);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell {
+    border: solid 1px white;
 }
