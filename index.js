@@ -27,5 +27,11 @@ function operate(num1, operator, num2) {
     }
 }
 
+const display = document.querySelector('.display');
+const buttons = document.querySelectorAll('.cell');
 
-
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        display.textContent = display.textContent + button.textContent;
+    })
+})
